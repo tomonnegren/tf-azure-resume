@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tom Önnegren - Resume</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" type="text/css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" type="text/css"/>
+		<script type="text/javascript" src="js/get_counter.js" defer></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="sidebar">
+				<div id="image">
+					<img id="profile-photo" src="images/me.png" alt="Profile-Image">
+				</div>
+				<p id="name">Tom Önnegren<br></p>
+				<hr width="100%">
+				<span id="description">- Hired by Omegapoint <br>- Studying at EC Utbildning <br>- Motivated by always learning and improving <br>- Azure deployments using Terraform <br>- Huge football fan - Forza Milan!</span></p>
+				<hr width="100%">
+				<div id="skills">
+					<p style="display:inline;"><b>Skills</b></p><br>
+					<p id="skill-stronger">Azure</p>
+					<p id="skill-stronger">Azure DevOps</p>
+					<p id="skill-stronger">Terraform</p>
+					<p id="skill-stronger">Windows</p>
+					<p id="skill-stronger">Linux</p>
+					<p id="skill-stronger">Docker</p>
+					<p id="skill-stronger">git</p>
+				</div><br>
+				<hr width="100%">
+				<div id="sidepanel-section-title"><b>Certifications</b><br>
+					<a href="https://www.credly.com/earner/earned/badge/e393f7bf-f60b-4337-a16e-b011b1edbf4f" class="link" target="_blank">
+						<img id="cert-thumbnail" src="images/az104.png" alt="Microsoft Certified: Azure Administrator Associate">
+					</a>
+					<a href="https://www.credly.com/earner/earned/badge/0c023e5f-bc8f-4f94-8aae-7459ba852a7b" class="link" target="_blank">
+						<img id="cert-thumbnail" src="images/az900.png" alt="Microsoft Certified: Azure Fundamentals
+						">
+					</a>
+				</div>
+				<hr width="100%">
+				<div id="sidepanel-section-title"><b>Contact me</b><br>
+					<a href="#" class="cryptedmail"
+						data-name="tom"
+						data-surname="onnegren"
+						data-domain="protonmail"
+						data-tld="com"
+						onclick="window.location.href = 'mailto:' + this.dataset.name + this.dataset.surname + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+					</a>
+				</div>
+				<div id="sidepanel-section-title">
+					<a href="https://www.linkedin.com/in/tomonnegren/" class="link" target="_blank">
+						<img id="social-thumbnail" src="images/linkedin.png" alt="LinkedIn">
+					</a>
+					&nbsp;
+					<a href="https://github.com/tomonnegren" class="link" target="_blank">
+						<img id="social-thumbnail" src="images/github.png" alt="GitHub">
+					</a>
+				</div>
+			</div>
+			<div id="info-pages">
+				<div class="page">
+					<p>&nbsp;&nbsp;&nbsp;Work experience</p>
+					<ul>
+						<p class="tag"><a href="https://omegapoint.se/" target="_blank" class="link">Omegapoint</a><br><span>Cloud Consultant | <span>2023-now</span></span></p>
+						<ul>
+							<li>Infrastructure as Code</li>
+							<li>......</li>
+							<li>......</li>
+							<br>
+						</ul>
+				</div>
+				<div class="page">
+					<p>&nbsp;&nbsp;&nbsp;Education</p>
+
+					<ul>
+						<p class="tag"><a href="https://ecutbildning.se/" target="_blank" class="link">EC Utbildning</a><br><span>Server & Virtualization | <span>2022-now</span></span></p>
+						<ul>
+							<li>Advanced hardware & operating systems</li>
+							<li>Linux/Unix</li>
+							<li>Windows Server Administration</li>
+							<li>Cisco</li>
+							<br>
+						</ul>
+						<p class="tag"><a href="https://www.scuolaleonardo.com/" target="_blank" class="link">Scuola Leonardo da Vinci</a><br><span>Italian intensive course | <span>2012-2013</span></span></p>
+						<ul>
+							<li>Italian course</li>
+							<br>
+						</ul>
+					</ul>
+				</div>
+				<div class="page">
+					<p>&nbsp;&nbsp;&nbsp;Other projects</p>
+
+					<ul>
+						<p class="tag"><b>Homelab</b><br><span>Playing around to learn | <span>now-always</span></span></p>
+						<ul>
+							<ul>Azure</ul>
+							<li>Playing around with everything that has to do with Azure.</li>
+							<br>
+							<ul>Terraform</ul>
+							<li>Playing around with everything that has to do with Terraform.</li>
+							<br>
+						</ul>
+						<p class="tag">This resume<br><span>inspired by <a href="https://cloudresumechallenge.dev" target="_blank" class="link">cloudresumechallenge.dev</a> | <span>2023</span></span></p>
+						<ul>
+							<li>Hosted on Azure</li>
+							<li>Code versioned on <a href="...." target="_blank" class="link">my github</a></li>
+							<li>Automatic deployment by Azure DevOps</li>
+							<li>Javascript visitor counter</li>
+							<li>.</li>
+							<li>.</li>
+							<br>
+						</ul>
+					</ul>
+				</div>
+				<p class="count">This page has been visited <a id="counter"></a> times.</p>
+			</div>
+		</div>
+	</body>
+</html>
