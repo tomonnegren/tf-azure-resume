@@ -39,6 +39,6 @@ variable "appinsightsname" {
 }
 
 variable "loganalyticsworkspacename" {
-  type = string
+  type    = string
   default = "resumeworkanalyticsworkspace"
 }
