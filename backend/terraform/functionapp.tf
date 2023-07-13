@@ -22,7 +22,7 @@ resource "azurerm_function_app" "function_app" {
   app_settings = {
     "AzureWebJobsStorage"            = azurerm_storage_account.storage_account.primary_connection_string
     "FUNCTIONS_WORKER_RUNTIME"       = "dotnet"
-    "CosmosDBConnection"             = azurerm_cosmosdb_account.dbaccount.primary_sql_connection_string
+    "ResumeConnectionString"         = azurerm_cosmosdb_account.dbaccount.primary_sql_connection_string
     "APPINSIGHTS_INSTRUMENTATIONKEY" = azurerm_application_insights.appinsights.instrumentation_key
   }
 
