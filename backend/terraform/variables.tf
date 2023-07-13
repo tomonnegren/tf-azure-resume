@@ -32,3 +32,8 @@ variable "serviceplanname" {
   type    = string
   default = "resume-service-plan"
 }
+
+variable "appinsightsname" {
+  type    = string
+  default = "resume-appinsights"
+}
