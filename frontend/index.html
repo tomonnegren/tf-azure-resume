@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" type="text/css"/>
 		<script type="text/javascript" src="js/get_counter.js" defer></script>
 	</head>
-
+	<p class="count">This page has been visited <a id="counter"></a> times.</p>
 	<body>
 		<div id="container">
 			<div id="sidebar">
@@ -15,9 +15,9 @@
 					<img id="profile-photo" src="images/me.png" alt="Profile-Image">
 				</div>
 				<p id="name">Tom Önnegren<br></p>
-				<hr width="100%">
-				<span id="description">- Hired by Omegapoint <br>- Studying at EC Utbildning <br>- Motivated by always learning and improving <br>- Azure deployments using Terraform <br>- Huge football fan - Forza Milan!</span></p>
-				<hr width="100%">
+				<hr width="100%" color="#5e9ede" style="opacity: 0.25">
+				<span id="description">- Hired by Omegapoint <br>- Studying at EC Utbildning <br>- Motivated by always learning and improving <br>- Azure deployments using Terraform</span></p>
+				<hr width="100%" color="#5e9ede" style="opacity: 0.25">
 				<div id="skills">
 					<p style="display:inline;"><b>Skills</b></p><br>
 					<p id="skill-stronger">Azure</p>
@@ -28,7 +28,7 @@
 					<p id="skill-stronger">Docker</p>
 					<p id="skill-stronger">git</p>
 				</div><br>
-				<hr width="100%">
+				<hr width="100%" color="#5e9ede" style="opacity: 0.25">
 				<div id="sidepanel-section-title"><b>Certifications</b><br>
 					<a href="https://www.credly.com/earner/earned/badge/e393f7bf-f60b-4337-a16e-b011b1edbf4f" class="link" target="_blank">
 						<img id="cert-thumbnail" src="images/az104.png" alt="Microsoft Certified: Azure Administrator Associate">
@@ -38,7 +38,7 @@
 						">
 					</a>
 				</div>
-				<hr width="100%">
+				<hr width="100%" color="#5e9ede" style="opacity: 0.25">
 				<div id="sidepanel-section-title"><b>Contact me</b><br>
 					<a href="#" class="cryptedmail"
 						data-name="tom"
@@ -56,44 +56,39 @@
 					<a href="https://github.com/tomonnegren" class="link" target="_blank">
 						<img id="social-thumbnail" src="images/github.png" alt="GitHub">
 					</a>
+					&nbsp;
+					<a href="https://twitter.com" class="link" target="_blank">
+						<img id="social-thumbnail" src="images/twitter.png" alt="Twitter">
+					</a>
 				</div>
 			</div>
+			
 			<div id="info-pages">
 				<div class="page">
 					<p>&nbsp;&nbsp;&nbsp;Work experience</p>
+					<div style="float: right"><img id="social-thumbnail" src="images/cloud.png" alt="Cloud"></div>
+					
 					<ul>
-						<p class="tag"><a href="https://omegapoint.se/" target="_blank" class="link">Omegapoint</a><br><span>Cloud Consultant | <span>2023-now</span></span></p>
+						<p class="tag"><a href="https://omegapoint.se/" target="_blank" class="link">Omegapoint</a><br><span>Cloud Consultant | <span>july 2023 - now</span></span></p>
 						<ul>
 							<li>Infrastructure as Code</li>
 							<li>......</li>
 							<li>......</li>
 							<br>
 						</ul>
-				</div>
-				<div class="page">
-					<p>&nbsp;&nbsp;&nbsp;Education</p>
-
-					<ul>
-						<p class="tag"><a href="https://ecutbildning.se/" target="_blank" class="link">EC Utbildning</a><br><span>Server & Virtualization | <span>2022-now</span></span></p>
+						<p class="tag"><a href="https://molnbolaget.com/" target="_blank" class="link">Molnbolaget</a><br><span>Internship | <span>may 2023 - june 2023</span></span></p>
 						<ul>
-							<li>Advanced hardware & operating systems</li>
-							<li>Linux/Unix</li>
-							<li>Windows Server Administration</li>
-							<li>Cisco</li>
+							<li>Projects in Azure</li>
+							<li>Learned and used Terraform for deployments</li>
+							<li>AZ-900 & AZ-104</li>
 							<br>
 						</ul>
-						<p class="tag"><a href="https://www.scuolaleonardo.com/" target="_blank" class="link">Scuola Leonardo da Vinci</a><br><span>Italian intensive course | <span>2012-2013</span></span></p>
-						<ul>
-							<li>Italian course</li>
-							<br>
-						</ul>
-					</ul>
 				</div>
 				<div class="page">
 					<p>&nbsp;&nbsp;&nbsp;Other projects</p>
 
 					<ul>
-						<p class="tag"><b>Homelab</b><br><span>Playing around to learn | <span>now-always</span></span></p>
+						<p class="tag"><a href="https://github.com/tomonnegren?tab=repositories" target="_blank" class="link">Homelab</a><br><span>Server & Virtualization | <span>now-always</span></span></p>
 						<ul>
 							<ul>Azure</ul>
 							<li>Playing around with everything that has to do with Azure.</li>
@@ -110,6 +105,29 @@
 							<li>Javascript visitor counter</li>
 							<li>.</li>
 							<li>.</li>
+							<br>
+						</ul>
+					</ul>
+				</div>
+				<div class="page">
+					<p>&nbsp;&nbsp;&nbsp;Education</p>
+				
+					<ul>
+						<p class="tag"><a href="https://ecutbildning.se/" target="_blank" class="link">EC Utbildning</a><br><span>Server & Virtualization | <span>may 2022 - now</span></span></p>
+						<ul>
+							<li>Advanced Hardware and Operating Systems</li>
+							<li>Linux/Unix</li>
+							<li>Windows Server System Administration</li>
+							<li>Virtualizaion 1</li>
+							<li>Project Management</li>
+							<li>Data Communication with Cisco</li>
+							<li>Sales-, Magement, and the Consulting Role</li>
+							<li>Communication</li>
+							<br>
+						</ul>
+						<p class="tag"><a href="https://www.scuolaleonardo.com/" target="_blank" class="link">Scuola Leonardo da Vinci</a><br><span>Italian intensive course | <span>2012-2013</span></span></p>
+						<ul>
+							<li>Italian course</li>
 							<br>
 						</ul>
 					</ul>

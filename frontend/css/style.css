@@ -1,11 +1,13 @@
 /*html {
 
-    background-color: #525867; /* Set the background color to black
-    color: #ffffff; /* Set the text color to white
+    background-color: #445264; Set the background color to "ligher dark blue"
+    color: #d8d8d8; /* Set the text color to "white" EAEAEA is good
   }*/
 
   html{
     font-family: 'Roboto', sans-serif;
+    background-color: #445264;
+    color: #EAEAEA;
 }
 hr{
     background: grey;
@@ -38,16 +40,17 @@ hr{
     position: relative;
     width: 300px;
     height: 300x;
-    border-radius: 20px;
+    border-radius: 150px;
 }
 #name{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 20px;
     font-weight: bold;
+    color: #ffffff;
 }
 #description{
-    color: #000000;
-    font-size: 14px;
+    color: #EAEAEA;
+    font-size: 15;
 }
 .page > ul > li{
     padding: 0 0 0 15px;
@@ -56,28 +59,31 @@ hr{
     width: 100%;
 }
 .page{
-    box-shadow: 0px 0px 15px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px -9px #5e9ede;
     overflow-x: hidden;
     margin-bottom: 30px;
     padding: 15px 30px 30px 30px;
-    background-color: #ffffff;
+    background-color: #445264;
 }
 .page > p{
     font-size: 22px;
     line-height: 2;
+    color:#ffffff
 }
 .page > ul{
     list-style-type: none;
 }
 .tag{
     font-size: 18px;
+    color:#ffffff
 }
 .tag span{
-    font-size: 14px;
-    color: #000000;
+    font-size: 15px;
+    color: #EAEAEA;
 }
 .tag span span{
-    color: #718190;
+    color: #5e9ede;
+    font-size: 13px;
 }
 @media screen and (max-width:1090px){
     #sidebar{
@@ -99,8 +105,8 @@ hr{
 #skill {
   display:inline;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px !important;
-  background: #d1d1d1;
+  font-size: 18px !important;
+  background: #EAEAEA;
   padding: 2px;
   border-radius: 4px;
   line-height: 35px;
@@ -112,13 +118,13 @@ hr{
   display:inline;
   font-family: 'Roboto', sans-serif;
   font-size: 18px !important;
-  background: #b8b8b8;
+  background: #5e9ede;
   padding: 3px;
   border-radius: 5px;
   line-height: 35px;
 }
 #skill-stronger:hover {
-  background-color: #007FFF;
+  background-color: #445264;
 }
 .cryptedmail:after {
   content: attr(data-name) attr(data-surname) "@" attr(data-domain) "." attr(data-tld);
@@ -126,7 +132,7 @@ hr{
 .cryptedmail{
     font-size: 15px !important;
     font-weight: bold;
-    color: #007FFF;
+    color: #5e9ede;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
@@ -147,19 +153,18 @@ hr{
 }
 .link{
   text-decoration: none;
-  color: #000000;
-  font-weight: bold;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
 ul > li{
-  font-size: 14px;
+  font-size: 15px;
   list-style-type: disc;
   line-height: 20px;
   font-family: 'Roboto', sans-serif;
 }
 .count{
-  font-size: 14px;
-  color: #007FFF;
+  font-size: 20px;
+  color: #5e9ede;
   font-weight: bold;
   position: absolute;
   left: 50%;
