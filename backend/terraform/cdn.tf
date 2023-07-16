@@ -13,8 +13,11 @@ resource "azurerm_cdn_endpoint" "cdnendpoint" {
 
   origin {
     name      = var.cdnendpointname
-    host_name = azurerm_storage_account.storage_account.primary_web_host
+    host_name = "tfazresumestorage.z6.web.core.windows.net"
+
   }
+
+  origin_host_header = "tfazresumestorage.z6.web.core.windows.net"
 
   is_http_allowed  = true
   is_https_allowed = true
