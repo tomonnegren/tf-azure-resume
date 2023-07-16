@@ -47,3 +47,13 @@ variable "loganalyticsworkspacename" {
   type    = string
   default = "tfazresume-workspace"
 }
+
+variable "cdnprofilename" {
+  type    = string
+  default = "tfazresume-cdn-profile"
+}
+
+variable "cdnendpointname" {
+  type    = string
+  default = "tfazresume"
+}
