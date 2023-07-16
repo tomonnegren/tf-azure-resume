@@ -1,6 +1,6 @@
 variable "rgname" {
   type    = string
-  default = "resume-rg"
+  default = "tfazresume-rg"
 }
 
 variable "location" {
@@ -8,14 +8,19 @@ variable "location" {
   default = "west europe"
 }
 
+variable "storagename" {
+  type    = string
+  default = "tfazresumestorage"
+}
+
 variable "cosmosdbaccountname" {
   type    = string
-  default = "resumeacct"
+  default = "tfazresume-db-account"
 }
 
 variable "cosmosdbname" {
   type    = string
-  default = "resume-db"
+  default = "tfazresume-db"
 }
 
 variable "cosmosdbcontainer" {
@@ -25,20 +30,20 @@ variable "cosmosdbcontainer" {
 
 variable "functionname" {
   type    = string
-  default = "azureresume-function"
+  default = "tfazresume-function"
 }
 
 variable "serviceplanname" {
   type    = string
-  default = "resume-service-plan"
+  default = "tfazresume-service-plan"
 }
 
 variable "appinsightsname" {
   type    = string
-  default = "resume-appinsights"
+  default = "tfazresume-appinsights"
 }
 
 variable "loganalyticsworkspacename" {
   type    = string
-  default = "resumeworkanalyticsworkspace"
+  default = "tfazresume-workspace"
 }

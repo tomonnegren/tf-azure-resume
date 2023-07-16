@@ -19,13 +19,12 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_storage_account" "storage_account" {
-  name                     = "clchsto1337"
+  name                     = var.storagename
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = var.location
   account_kind             = "StorageV2"
   account_tier             = "Standard"
   account_replication_type = "LRS"
-  enable_https_traffic_only = true
 
   static_website {
     index_document = "index.html"
