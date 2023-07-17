@@ -57,3 +57,24 @@ variable "cdnendpointname" {
   type    = string
   default = "tfazresume"
 }
+
+
+variable "imagefiles" {
+  type    = list(string)
+  default = ["az104.png", "az900.png", "github.png", "linkedin.png", "twitter.png", "me.png", "cloud.png", "cloud1.png",]
+}
+
+variable "htmlfile" {
+  type    = string
+  default = "index.html"
+}
+
+variable "cssfile" {
+  type    = string
+  default = "css/style.css"
+}
+
+variable "jsfile" {
+  type    = string
+  default = "js/get_counter.js"
+}

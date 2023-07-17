@@ -22,3 +22,15 @@ resource "azurerm_cdn_endpoint" "cdnendpoint" {
   is_http_allowed  = true
   is_https_allowed = true
 }
+
+resource "azurerm_cdn_endpoint_custom_domain" "cdndomain" {
+  name            = "tomonnegren"
+  cdn_endpoint_id = azurerm_cdn_endpoint.cdnendpoint.id
+  host_name       = "www.tomonnegren.se"
+  
+  cdn_managed_https {
+    certificate_type = "Dedicated"
+    protocol_type    = "ServerNameIndication"
+    tls_version      = "TLS12"
+  }
+}
