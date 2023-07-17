@@ -7,7 +7,7 @@
   html{
     font-family: 'Roboto', sans-serif;
     background-color: #2c3c50;
-    color: #EAEAEA;
+    color: #e0e0e0;
 }
 hr{
     background: grey;
@@ -49,7 +49,7 @@ hr{
     color: #ffffff;
 }
 #description{
-    color: #EAEAEA;
+    color: #e0e0e0;
     font-size: 15;
 }
 .page > ul > li{
@@ -79,7 +79,7 @@ hr{
 }
 .tag span{
     font-size: 15px;
-    color: #EAEAEA;
+    color: #e0e0e0;
 }
 .tag span span{
     color: #5e9ede;
@@ -139,7 +139,7 @@ hr{
 #sidepanel-section-title{
   line-height: 30px;
   font-size: 16px;
-  
+  color: #ffffff;
 }
 #social-thumbnail{
     position: relative;
@@ -170,3 +170,11 @@ ul > li{
   left: 50%;
   padding-bottom: 3em
 }
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
