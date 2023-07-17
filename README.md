@@ -1,6 +1,6 @@
 # tf-azure-resume
 
-## My resume, inspired by "the cloud resume challenge" - made in Azure using Terraform as much as possible
+## My resume, inspired by "The Cloud Resume Challenge" - made in Azure using Terraform as much as possible
 
 No prior experience with HTML, CSS or JS so the webpage will be a template which I will edit to my liking as we go and learn.
 
@@ -17,7 +17,7 @@ The different components creating the Function API:
 
 The key components and concepts used in this code are:
 
-HttpTrigger: This attribute decorates the Run method in ResumeCounter.cs and specifies that the function should be triggered by HTTP requests.
+HttpTrigger: This attribute decorates the Run method in ResumeCounter.cs and specifies that the function should be triggered by HTTP requests
 CosmosDB: This attribute decorates the counter parameter and updatedCounter output parameter in Run method, specifying the connection settings and details for interacting with the Cosmos DB container.
 HttpResponseMessage: This class is used to construct the HTTP response returned by the function, containing the serialized counter object as the content.
 
