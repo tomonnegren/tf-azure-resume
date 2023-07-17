@@ -17,8 +17,10 @@ The different components creating the Function API:
 
 The key components and concepts used in this code are:
 
-HttpTrigger: This attribute decorates the Run method in ResumeCounter.cs and specifies that the function should be triggered by HTTP requests
+HttpTrigger:This attribute decorates the Run method in ResumeCounter.cs and specifies that the function should be triggered by HTTP requests
+
 CosmosDB: This attribute decorates the counter parameter and updatedCounter output parameter in Run method, specifying the connection settings and details for interacting with the Cosmos DB container.
+
 HttpResponseMessage: This class is used to construct the HTTP response returned by the function, containing the serialized counter object as the content.
 
 Overall, this code sets up an Azure Function API that receives HTTP requests, increments the visitor count stored in Cosmos DB, and returns the updated count in JSON format as the response.
