@@ -1,26 +1,18 @@
-# tf-azure-resume
+## tf-azure-resume
 
 ## My resume, inspired by "The Cloud Resume Challenge" - made in Azure using Terraform as much as possible
 
-No prior experience with HTML, CSS or JS so the webpage will be a template which I will edit to my liking as we go and learn.
+No prior experience with HTML, CSS or JS - The webpage will most likely be a template, which I will edit to my liking as we go and learn.
 
-So far I have created the Azure infrastructure with Terraform; main.tf, appinsights.tf, cosmosdb.tf, functionapp.tf, cdn.tf, variables.tf. 
+## Summary:
 
-The Azure Functions API using C#. The API is designed to increment a counter stored in a Cosmos DB container.
-The different components creating the Function API:
-* **api.csproj:** This file defines the project configuration, including the target framework and Azure Functions version. It also specifies the required packages for working with Azure Functions and Cosmos DB.
+* Created a static website using HTML and styled it with CSS.
+* Hosted the website on Azure Storage as a static website, ensuring cost-effective and scalable hosting.
+* Utilized Terraform to deploy, set up, and manage the Azure infrastructure; Storage Account (static website, container etc), CosmosDB (account, database, container etc), Function App + App Service Plan, Application Insights, CDN (profile, endpoint, custom domain) and more.
+* Created an Azure Function API to handle HTTP triggers, enabling the updating of visitor counts stored in Cosmos DB, and returning the count to the webpage.
+* Created a JavaScript visitor counter on the webpage, which interacts with the API to fetch and display the count.
+* Leveraged Azure CDN for caching, HTTPS, and custom domain mapping, enhancing website performance and security.
 
-* **Counter.cs:** This class represents the data model for the counter. It has properties for Id and Count, which will be used to store and track the visitor count in the Cosmos DB container.
+----
 
-* **ResumeCounter.cs:**  When triggered by an HTTP request, it retrieves the current counter value from the Cosmos DB container. It then increments the counter and serializes the updated counter object into JSON format. Finally, it returns an HTTP response with the updated counter as the content. This ensures that each time the function is called, the visitor count is incremented and the updated count is provided in the response.
-
-
-The key components and concepts used in this code are:
-
-HttpTrigger:This attribute decorates the Run method in ResumeCounter.cs and specifies that the function should be triggered by HTTP requests
-
-CosmosDB: This attribute decorates the counter parameter and updatedCounter output parameter in Run method, specifying the connection settings and details for interacting with the Cosmos DB container.
-
-HttpResponseMessage: This class is used to construct the HTTP response returned by the function, containing the serialized counter object as the content.
-
-Overall, this code sets up an Azure Function API that receives HTTP requests, increments the visitor count stored in Cosmos DB, and returns the updated count in JSON format as the response.
+*I'm not quite done with this project yet, I will return to work on it and make further improvements.*
