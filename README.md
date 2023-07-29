@@ -1,5 +1,3 @@
-## tf-azure-resume
-
 ## My resume, inspired by "The Cloud Resume Challenge" - made in Azure using Terraform as much as possible
 
 No prior experience with HTML, CSS or JS - The webpage will most likely be a template, which I will edit to my liking as we go and learn.
